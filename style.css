@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #F2C94C;
+    --black: #333333;
+    --width-break: 600px;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+
+}
+
+body {
+    font-family: Kalam, cursive;
+    color: var(--black);
+}
+
+.game-title {
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--primary-color);
+}
+
+#translate-input {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: var(--black);
+    width: 100%;
+    min-height: 20vh;
+    font-size: large;
+    font-family: inherit;
+}
+
+#btn-translate {
+    border-radius: 5px;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: large;
+    margin-bottom: 1rem;
+    background-color: var(--primary-color);
+}
+
+#btn-translate:hover {
+    background-color: #e6ba36;
+}
+
+#translate-output {
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    padding: 1rem;
+    font-size: large;
+    font-family: inherit;
+    overflow: auto;
+    border: 1px solid var(--black);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+
+footer p {
+    max-width: var(--width-break);
+    margin: auto;
+}
+
+
+.font-x-large {
+    font-size: 2rem;
+}
