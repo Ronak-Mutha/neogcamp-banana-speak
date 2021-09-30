@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Talk</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 </head>
 
 <body>
@@ -15,6 +16,15 @@
         <textarea id='translate-input'
             placeholder='Put the English sentence which you want to translate to banana language here.'></textarea>
         <button id='btn-translate'>Translate To Banana</button>
+        
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg"></span>
+            <div class="close-btn">
+               <span class="fas fa-times"></span>
+            </div>
+         </div>
+
         <div>Translation will come here👇</div>
         <div id='translate-output'></div>
     </main>
