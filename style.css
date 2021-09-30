@@ -86,9 +86,6 @@ footer p {
     font-size: 2rem;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
 .alert{
   background: #ffdb9b;
   padding: 20px 40px;
