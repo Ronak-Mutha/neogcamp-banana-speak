@@ -40,6 +40,13 @@ function clickEventHandler(event) {
     const translateInputValue = translateInput.value;
     const finalURL = constructURL(translateInputValue);
 
+    
+    if (translateInputValue == '') {
+        showAlert()
+        msg.innerText = 'Please enter text you want to translate.'
+        return;
+    }
+
     fetchingDataFromURL(finalURL)
     .then(json => {
         if(json.success) {
